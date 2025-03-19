@@ -22,11 +22,8 @@ namespace PracticeTest.TestSuites
             // need to add thelogin part logic 
             IWebDriver driver = new ChromeDriver();
             driver.Navigate().GoToUrl("https://www.google.com");
-
             driver.Manage().Window.Maximize();
             driver.Navigate().GoToUrl("https://www.Amazon.com");
-            driver.Manage().Window.Maximize();
-            driver.Close();   
         }
 
         [TestMethod]
