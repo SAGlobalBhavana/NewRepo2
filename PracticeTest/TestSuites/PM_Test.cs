@@ -39,5 +39,18 @@ namespace PracticeTest.TestSuites
             driver.Navigate().GoToUrl("https://www.Amazon.com");
 
         }
+
+	    
+ [TestMethod]
+   public void PurchaseOrder_Workflow()
+   {
+       // login to Legal Entity - UK10
+       fO_Purchase.NavigateToUKEntity();
+       // Navigating to All projects 
+       fO_Purchase.NavigateToAllProjects();
+
+       // Create new Purchase Order 
+       fO_Purchase.CreatePurchaseOrderThroughProjectID(fO_Reusable);
+   }
     }
 }
