@@ -9,7 +9,7 @@ namespace PracticeTest.TestSuites
        
 
         [ClassInitialize]
-
+        // Login part
         public static void LoginPart(TestContext context)
         {
             FO_LoginPage.loginFO(FO_URL, FO_Username, FO_Password);
